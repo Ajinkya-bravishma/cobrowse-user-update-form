@@ -1,0 +1,95 @@
+<div class="main-container">
+  <div class="form-container">
+    <div class="logo">
+      <img src="assets/bank-logo.png" alt="" />
+    </div>
+
+    <div class="main-form">
+      <div class="title">
+        <h1>Application for Change in {{ formData.title }}</h1>
+      </div>
+
+      <form>
+        <div class="form">
+          <div class="labin">
+            <label for="">Customer Name:</label>
+            <input type="text" name="customerName" />
+          </div>
+          <div class="labin">
+            <label for="">Customer ID :</label>
+            <input type="text" name="CustomerID" />
+          </div>
+          <div class="labin">
+            <label for="">{{ formData.fieldThree }}</label>
+            <input type="text" name="CustomerChange1" />
+          </div>
+          <div class="labin">
+            <label for="">{{ formData.fieldFour }}</label>
+            <input type="text" name="CustomerChange2" />
+          </div>
+          <div class="sss">
+            <p>
+              The Above details would get updated only in all Acounts / Fixed
+              deposits held with the Bank. The details for credit Card / Loans
+              will not get updated.
+            </p>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+            "
+          >
+            <button type="" class="btn2" id="updatebtn">Update</button>
+            <button
+              type="button"
+              (click)="onHit($event)"
+              class="btn"
+              [ngClass]="{ hidden: buttonActive }"
+            >
+              HELP
+            </button>
+          </div>
+          <!-- <div *ngIf="showData" class="popup-container" id="showpopup">
+              <p>
+                your code is {{ ss }} Please share it with agent to start the
+                co-browse session.
+              </p>
+              <button type="button" (click)="closePopup()">
+                <span style="width: 50%">&times;</span>
+              </button>
+            </div> -->
+
+          <div
+            class="cobrowse-code-popup"
+            *ngIf="showData"
+            style="display: block"
+          >
+            <div class="popup-container">
+              <div class="cobrowse-popup-header">
+                <span> Start Co-browse</span>
+                <button
+                  type="button"
+                  (click)="closePopup()"
+                  class="x-btn"
+                ></button>
+              </div>
+              <div class="cobrowse-popup-body">
+                <p class="cobrowse-popup-info">
+                  Share this cobrowse code with the support team for screen
+                  access.
+                </p>
+                <h3 class="cobrowse-popup-code">{{ ss }}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div></div>
+</div>
