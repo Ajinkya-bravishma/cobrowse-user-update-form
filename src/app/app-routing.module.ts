@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CbFormComponent } from './cb-form/cb-form.component';
 import { AppComponent } from './app.component';
+import { CourceRegComponent } from './cource-reg/cource-reg.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'email',
     component: CbFormComponent,
+  },
+  {
+    path: 'course',
+    component: CourceRegComponent,
   },
 ];
 

@@ -1,0 +1,110 @@
+<div class="main-container">
+  <div class="main-form">
+    <div class="title">
+      <h1 style="margin: 0">Course Registration</h1>
+    </div>
+    <form>
+      <div class="labin">
+        <div class="col-6">
+          <label for="fname">First Name</label><br />
+          <input type="text" id="fname" />
+        </div>
+
+        <div class="col-6">
+          <label for="lname">Last Name</label><br />
+          <input type="text" id="lname" />
+        </div>
+      </div>
+
+      <div class="labin">
+        <div class="col-6">
+          <label for="email">Email</label><br />
+          <input type="text" id="email" />
+        </div>
+
+        <div class="col-6">
+          <label for="mbo"> Your Phone </label><br />
+
+          <input type="text" id="mbo" />
+        </div>
+      </div>
+
+      <div class="labin">
+        <div class="col-6">
+          <label for="bday">Birth Date</label><br />
+          <input type="text" id="bday" />
+        </div>
+
+        <div class="col-6">
+          <label for="gender"> Gender </label><br />
+
+          <input type="sel" id="gender" />
+        </div>
+      </div>
+
+      <div class="address">
+        <label for="add">Address</label>
+        <input type="text" id="add" />
+      </div>
+
+      <div class="hhh">
+        <div class="col-4">
+          <label for="city">City</label>
+          <input type="text" id="city" />
+        </div>
+        <div class="col-4">
+          <label for="state">State/Prov/Region</label><br />
+          <input type="text" id="state" />
+        </div>
+        <div class="col-4">
+          <label for="zip">Postal/Zip</label><br />
+          <input type="text" id="zip" />
+        </div>
+      </div>
+
+      <div class="country">
+        <label for="country">Country</label><br />
+        <select id="country">
+          <option value="ind">India</option>
+          <option value="us">US</option>
+          <option value="sa">SA</option>
+        </select>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          padding-top: 3rem;
+        "
+      >
+        <button type="" class="btn2" id="updatebtn">Submit</button>
+        <button
+          type="button"
+          (click)="onHit($event)"
+          class="btn"
+          [ngClass]="{ hidden: buttonActive }"
+        >
+          Help
+        </button>
+      </div>
+
+      <div class="cobrowse-code-popup" *ngIf="showData" style="display: block">
+        <div class="popup-container">
+          <div class="cobrowse-popup-header">
+            <span> Start Co-browse</span>
+            <button type="button" (click)="closePopup()" class="x-btn"></button>
+          </div>
+          <div class="cobrowse-popup-body">
+            <p class="cobrowse-popup-info">
+              Share this cobrowse code with the support team for screen access.
+            </p>
+            <h3 class="cobrowse-popup-code">{{ ss }}</h3>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
