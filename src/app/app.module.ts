@@ -8,11 +8,13 @@ import { Router } from '@angular/router';
 import { FormService } from './form.service';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { CourceRegComponent } from './cource-reg/cource-reg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CbFormComponent
+    CbFormComponent,
+    CourceRegComponent
   ],
   imports: [
     BrowserModule,
