@@ -122,13 +122,15 @@
 
   row-gap: 1.5rem;
 }
+.col-6{
+  width: 46%;
+}
 
 .labin {
   width: 100%;
   display: flex;
   align-items: stretch;
-  /* justify-content: space-between; */
-  gap: 6rem;
+  gap: 2rem;
   padding: 0.5rem 0rem;
   align-items: center;
 }
@@ -141,8 +143,69 @@
   width: 100%;
   padding: 0.5rem;
   /* background-color: #dbdbdb; */
-  border-radius: 11px;
+  border-radius: 5px;
   border: none;
+}
+.hidden {
+  cursor: not-allowed;
+  background-color: rgb(0, 142, 224, 0.3);
+}
+
+.address {
+  width: 99%;
+  display: flex;
+  flex-flow: column;
+  padding: 0.5rem 0;
+}
+.address input {
+  width: 98%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.address label {
+  color: #193773;
+  font-weight: 600;
+  padding-left: 2px;
+}
+.hhh {
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-flow: row;
+  column-gap: 2rem;
+}
+.hhh label {
+  color: #193773;
+  font-weight: 600;
+  padding-left: 2px;
+}
+.hhh input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.col-4{
+  width: 29%;
+}
+.country {
+  padding: 0.5rem 0;
+}
+.country select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.country label {
+  color: #193773;
+  font-weight: 600;
+  padding-left: 2px;
+}
+.country option {
+  color: #193773;
+  font-weight: 600;
 }
 
 .sss p {
@@ -302,59 +365,4 @@
     width: 80%;
   }
 }
-.hidden {
-  cursor: not-allowed;
-  background-color: rgb(0, 142, 224, 0.3);
-}
-.col-6 {
-  width: 40%;
-}
-.address {
-  display: flex;
-  flex-flow: column;
-  padding: 0.5rem 0;
-}
-.address input {
-  width: 96%;
-  padding: 0.5rem;
-  border-radius: 11px;
-  border: none;
-}
-.address label {
-  color: #193773;
-  font-weight: 600;
-}
-.hhh {
-  width: 100%;
-  padding: 0.5rem 0;
-  display: flex;
-  flex-flow: row;
-}
-.hhh label {
-  color: #193773;
-  font-weight: 600;
-}
-.hhh input {
-  width: 80%;
-  padding: 0.5rem;
-  /* background-color: #dbdbdb; */
-  border-radius: 11px;
-  border: none;
-}
-.country {
-  padding: 0.5rem 0;
-}
-.country select {
-  width: 98%;
-  padding: 0.5rem;
-  border-radius: 11px;
-  border: none;
-}
-.country label {
-  color: #193773;
-  font-weight: 600;
-}
-.country option {
-  color: #193773;
-  font-weight: 600;
-}
+

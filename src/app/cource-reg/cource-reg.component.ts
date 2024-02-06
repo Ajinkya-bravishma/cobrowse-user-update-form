@@ -76,12 +76,12 @@ export class CourceRegComponent {
 
   constructor(private route: Router, private formService: FormService) {}
   ngOnInit() {
-    let path = this.route.url;
-    path = path.slice(1);
-    console.log('path==> ', path);
+    // let path = this.route.url;
+    // path = path.slice(1);
+    // console.log('path==> ', path);
 
-    this.formData = this.formDataa[path];
-    console.log('formData==> ', this.formData);
+    // this.formData = this.formDataa[path];
+    // console.log('formData==> ', this.formData);
 
     // this.formService.formData$.subscribe((data) => {
     //   console.log('form data updated', this.formData.title);
