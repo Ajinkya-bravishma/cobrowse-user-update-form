@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   
   constructor(private route:Router,private formService:FormService){}
   ngOnInit() {
-    console.log('fdas')
+   
    
   
    
